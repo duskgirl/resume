@@ -225,9 +225,6 @@
         }
       },
       onLeave: function(origin, destination, direction) {
-        if (destination.index != 0) {
-          destination.item.classList.add('load-background');
-        }
         if (destination.index === 0) {
           resumeAnimation('.person_header_animation', ['animated', 'pulse'], 'remove');
         } else if (destination.index === 1) {
